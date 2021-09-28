@@ -1,0 +1,6 @@
+{
+	"name": "AstorMIPI",
+	"version": "0.0.2",
+	"jar": "astor-1.1.0-jar-with-dependencies.jar",
+	"main": "fr.inria.main.evolution.AstorMain"
+}
