@@ -141,7 +141,7 @@ time java %s -cp %s %s \\
             subprocess.call(cmd, shell=True)
         pass
 
-def init_mipi(args, name, mode):
+def init(args, name, mode):
     args.parameters += ":validation:skku.mipi.validation.MipiJUnitProcessValidator"
     args.parameters += ":fitnessfunction:skku.mipi.MipiTestCaseFitnessFunction"
     args.parameters += ":MipiWebsocketServerHost:115.145.178.160:MipiWebsocketServerPort:8765"
