@@ -1,4 +1,3 @@
-ToolName=jKali
 # jKali
 
 SEED=300
@@ -7,6 +6,9 @@ MAXGEN=500
 TIMEOUT=120
 
 OUTPUT_DIR_NAME=results_pop${POPSIZE}_maxgen${MAXGEN}_time${TIMEOUT}_seed${SEED}
+
+ToolName=jKali-MIPI
+# jKali Math
 
 REPTA_ROOT_DIR=/workspace/RepairThemAll
 OUTPUT_DIR=${REPTA_ROOT_DIR}/${OUTPUT_DIR_NAME}
