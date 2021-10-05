@@ -21,7 +21,8 @@ docker pull tdurieux/repairthemall
 
 # SmFix Chart
 
-ToolName=SmFix # jGenProg
+#ToolName=SmFix
+ToolName=jGenProg
 
 sudo docker run -it --rm -v /workspace/RepairThemAll/data:/data -v /workspace/RepairThemAll/results:/results -v /workspace/RepairThemAll/repair_tools:/repair_tools -v /workspace/RepairThemAll/script:/script tdurieux/repairthemall ${ToolName} -b Defects4J -i Chart_1 Chart_3 Chart_5 Chart_7 Chart_13 Chart_15 Chart_25
 
