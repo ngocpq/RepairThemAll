@@ -144,7 +144,8 @@ time java %s -cp %s %s \\
 def init(args, name, mode):
     args.parameters += ":validation:skku.mipi.validation.MipiJUnitProcessValidator"
     args.parameters += ":fitnessfunction:skku.mipi.MipiTestCaseFitnessFunction"
-    args.parameters += ":MipiWebsocketServerHost:115.145.178.160:MipiWebsocketServerPort:8765"
+    #args.parameters += f":MipiWebsocketServerHost:115.145.178.160:MipiWebsocketServerPort:8765"
+    args.parameters += ":MipiWebsocketServerHost:%s:MipiWebsocketServerPort:%s" % (args.mipi_server_address, args.mipi_server_port)
     return AstorMIPI(name=name,
                     mode=mode,
                     maxgen=args.maxgen,
@@ -177,6 +178,9 @@ def astor_args(parser):
     parser.add_argument("--maxgen", help="Astor maxgen", default=1000000, type=int)
     parser.add_argument("--scope", "-s", help="The scope of the ingredients", choices=("local", "package", "global"),
                         default="local")
+    print('DEBUG: hello')
+    parser.add_argument("--mipi_server_address", help="Address of MIPI server", default='115.145.178.160', type=str)
+    parser.add_argument("--mipi_server_port", help="MIPI server port", default=8765, type=int)
     parser.add_argument("--parameters", "-p", help="Astor parameters", default="x:x")
     parser.add_argument("--dontstopfirst", help="Don't stop after the first bug",
                         action='store_false',
