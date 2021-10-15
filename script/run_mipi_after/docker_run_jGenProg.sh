@@ -11,7 +11,7 @@ MIPI_MODE=CsNetRnnTri
 MIPI_HOST=115.145.178.160
 MIPI_PORT=9765
 
-mipifilter_before_validation=fase
+mipifilter_before_validation=false
 mipi_avoid_early_stop=true
 
 MIPI_PARAMETER=MipiWebsocketServerHost:${MIPI_HOST}:MipiWebsocketServerPort:${MIPI_PORT}:mipifilter_before_validation:${mipifilter_before_validation}:mipi_avoid_early_stop:${mipi_avoid_early_stop}
