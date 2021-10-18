@@ -1,6 +1,6 @@
 ToolName=jMutRepair
 
-BUG_PARAS="-b Defects4J -i Chart_1 Chart_5 Chart_13 Chart_15 Chart_25 Chart_26 Math_2 Math_8 Math_28 Math_32 Math_40 Math_49 Math_50 Math_78 Math_80 Math_81 Math_82 Math_84 Math_85 Math_95 Time_4 Time_11"
+BUG_PARAS="-b Defects4J -i Chart_1 Chart_7 Chart_25 Chart_26 Math_2 Math_28 Math_50 Math_57 Math_80 Math_81 Math_82 Math_84 Math_85 Math_88 Closure_21 Closure_22 Closure_62 Lang_22 Lang_27 Time_4 Time_11 Chart_5 Chart_13 Chart_15 Math_8 Math_32 Math_40 Math_49 Math_78 Math_95"
 
 
 SEED=300
