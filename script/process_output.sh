@@ -16,6 +16,9 @@ grep -r -m 1 -A 4 "Error at generation" * > ../statistic_output/errors_Messages.
 
 grep -r -m 1 "End Repair Search" * | sed --expression="s/befor_/before\t/" | sed --expression="s/_es/\tAvoidEarlyStop\t/" | sed --expression="s/\//\t/g" | sed --expression="s/- End Repair Search:/\tEnd Repair Search\t/"> ../statistic_output/out_EndRepairSearch.txt
 
+grep -r -m 1 "Found Solution, child variant " * | sed --expression="s/befor_/before\t/" | sed --expression="s/_es/\tAvoidEarlyStop\t/" | sed --expression="s/\//\t/g" | sed --expression="s/ - -Found Solution, child variant #/\tFound Solution, child variant\t/"> ../statistic_output/found_patchId.txt
+
+grep -r -c "Found Solution, child variant " * | grep -v ".json:" | sed --expression="s/befor_/before\t/" | sed --expression="s/_es/\tAvoidEarlyStop\t/" | sed --expression="s/\//\t/g" | sed --expression="s/repair.log:/repair.log\tSolution count\t/" > ../statistic_output/solution_count.txt
 
 # grep -r -c "isSolution: true" * > countSolution.txt
 
