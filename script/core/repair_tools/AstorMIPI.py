@@ -153,7 +153,8 @@ def init(args, name, mode):
                     population=args.population,
                     scope=args.scope,
                     parameters=args.parameters,
-                    seed=args.seed)
+                    seed=args.seed,
+                    stopfirst=args.stopfirst)
 
 def smfix_init(args):
     return init(args, "SmFix", "smfix")
