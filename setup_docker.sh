@@ -1,1 +1,1 @@
-ocker pull tdurieux/repairthemall
+docker pull tdurieux/repairthemall

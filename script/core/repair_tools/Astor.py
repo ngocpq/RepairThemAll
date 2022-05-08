@@ -149,7 +149,8 @@ def init(args, name, mode):
                     population=args.population,
                     scope=args.scope,
                     parameters=args.parameters,
-                    seed=args.seed)
+                    seed=args.seed,
+                    stopfirst=args.stopfirst)
 
 
 def cardumen_init(args):
