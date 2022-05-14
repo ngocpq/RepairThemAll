@@ -150,7 +150,7 @@ def init(args, name, mode):
                     scope=args.scope,
                     parameters=args.parameters,
                     seed=args.seed,
-                    stopfirst=not args.dontstopfirst)
+                    stopfirst=args.stopfirst)
 
 
 def cardumen_init(args):
@@ -176,7 +176,7 @@ def astor_args(parser):
     parser.add_argument("--parameters", "-p", help="Astor parameters", default="x:x")
     parser.add_argument("--dontstopfirst", help="Don't stop after the first bug",
                         action='store_false',
-                        dest='dontstopfirst',
+                        dest='stopfirst',
                         default=True)
     parser.add_argument('--version', action='version', version='Astor 26ee3dfc8b2d7ed4373f7cfe0d4bd5bcf31d9f28')
     pass
